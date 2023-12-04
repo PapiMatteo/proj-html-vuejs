@@ -1,11 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppHero from './components/AppHero.vue'
+import AppHero from './components/AppHero.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   components: {
     AppHeader,
-    AppHero
+    AppHero,
+    AppMain
   },
   data() {
     return {
@@ -26,6 +28,7 @@ export default {
     <AppHeader :navItems="headerNav"/>
     <AppHero />
   </div>
+  <AppMain />
   
 </template>
 

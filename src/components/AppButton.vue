@@ -16,8 +16,9 @@ p {
     padding: 10px 0;
     border-radius: 20px;
     text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: normal;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
     a{
         display: inline-block;
         margin-right: 15px;
