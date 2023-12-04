@@ -1,6 +1,9 @@
 <script>
+import AppButton from './AppButton.vue';
 export default {
-
+    components: {
+        AppButton
+    }
 }
 </script>
 
@@ -8,9 +11,10 @@ export default {
     <div class="container">
         <div class="hero-content">
             <div class="text-content">
-                <p>Hungry?</p>
+                <p class="title-p">Hungry?</p>
                 <h1>Great Food</h1>
                 <h2>Delivered</h2>
+                <AppButton :btnText="'VIEW OUR MENU'"/>
             </div>
         </div>
     </div>
@@ -33,11 +37,15 @@ export default {
     }
     h2 {
         font-size: 3.5rem;
+        margin-bottom: 1.2rem;
     }
-    p {
+    .title-p {
         font-size: 2rem;
     }
 
+    p {
+        width: 75%;
+    }
 }
 
 </style>
