@@ -1,8 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppHero from './components/AppHero.vue'
+
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppHero
   },
   data() {
     return {
@@ -21,6 +24,7 @@ export default {
 <template>
   <div class="header-section">
     <AppHeader :navItems="headerNav"/>
+    <AppHero />
   </div>
   
 </template>
@@ -32,7 +36,7 @@ export default {
 .header-section {
   background-image: url('./assets/img/home-background-hero-scaled.jpg');
   background-size: cover;
-  min-height: 850px;
+  min-height: 700px;
 }
 
 </style>

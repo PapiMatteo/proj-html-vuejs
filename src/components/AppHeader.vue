@@ -25,16 +25,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-    width: 70%;
-    margin: 0 auto;
 
-    .header-content {
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
+.header-content {
+    padding-top: 1.5rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     a {
         text-decoration: none;
         color: white;
@@ -44,6 +42,8 @@ export default {
         display: flex;
         gap: 2rem;
     }
+
 }
+    
 
 </style>
