@@ -12,8 +12,9 @@ export default {
 
 <style lang="scss" scoped>
 p {
+    color: white;
     background-color: #cc1a26;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-radius: 20px;
     text-align: center;
     font-size: 1rem;

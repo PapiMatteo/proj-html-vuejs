@@ -1,6 +1,8 @@
 <script>
-export default {
+import AppPopular from './AppPopular.vue';
 
+export default {
+    components: { AppPopular }
 }
 </script>
 
@@ -12,10 +14,15 @@ export default {
             <li><i class="fa-solid fa-mobile-screen-button"></i> IN APP ORDERING</li>
             <li><i class="fa-solid fa-car"></i> FAST DELIVERY</li>
         </ul>
+        <AppPopular/>       
+    </div> 
+    <div class="sale-bg">
+        <img src="../assets/img/svg-0.svg" alt="">
     </div>
 </template>
 
 <style lang="scss" scoped>
+
 ul {
     list-style-type: none;
     height: 50px;
@@ -34,6 +41,18 @@ ul {
             font-size: 1.2rem;
             margin-right: 5px;
         }
+    }
+}
+
+.sale-bg {
+    background-image: url('../assets/img/first-order-background-scaled.jpg');
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2rem;
+    img {
+        width: 100%;
+        height: 150px;
     }
 }
 

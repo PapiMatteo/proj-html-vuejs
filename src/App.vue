@@ -39,6 +39,7 @@ export default {
 .header-section {
   background-image: url('./assets/img/home-background-hero-scaled.jpg');
   background-size: cover;
+  background-position: bottom;
   min-height: 700px;
 }
 
