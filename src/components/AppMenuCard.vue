@@ -20,19 +20,25 @@ export default {
     <div class="card">
         <img :src="getImagePath(item.path)" alt="">
         <h3>{{ item.name }}</h3>
-        <p v-if="item.price" class="price">{{ item.price }}</p>
     </div>
 </template>
 
 <style lang="scss" scoped>
-h3, .price {
-    text-align: center;
+.card{
+    position: relative;
+    background-color: black;
+    img {
+        display: block;
+        opacity: 60%;
+        width: 100%;
+        height: 200px;
+    }
+    h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
 }
-h3 {
-    font-size: 1.6rem;
-}
-.price {
-    color:#cc1a26;
-}
-
 </style>

@@ -1,8 +1,39 @@
 <script>
+import AppMenu from './AppMenu.vue';
 import AppPopular from './AppPopular.vue';
 
 export default {
-    components: { AppPopular }
+    components: {
+        AppPopular,
+        AppMenu 
+    },
+    data() {
+        return {
+            allergensList: [
+                {
+                    path: 'plant.png',
+                    text: 'Vegetarian'
+                },
+                {
+                    path: 'wheat.png',
+                    text: 'Gluten Free'
+                },
+                {
+                    path: 'lactose-free.png',
+                    text: 'Dairy Free'
+                },
+                {
+                    path: 'steak.png',
+                    text: 'Keto Friendly'
+                }
+            ]
+        }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -19,13 +50,22 @@ export default {
     <div class="sale-bg">
         <img src="../assets/img/svg-0.svg" alt="">
     </div>
+    <AppMenu />
+    <div class="container">
+        <ul class="allergen">
+            <li v-for="item in allergensList">
+                <img :src="getImagePath(item.path)" alt="">
+                <h4>{{ item.text }}</h4>
+            </li>
+        </ul>
+    </div>
+    
 </template>
 
 <style lang="scss" scoped>
 
 ul {
     list-style-type: none;
-    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,6 +80,22 @@ ul {
         i {
             font-size: 1.2rem;
             margin-right: 5px;
+        }
+    }
+}
+
+.allergen {
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+        h4 {
+            font-size: 1.5rem;
         }
     }
 }
