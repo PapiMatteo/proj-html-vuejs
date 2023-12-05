@@ -24,6 +24,7 @@ export default {
     background-image: url('../assets/img/app-ordering-scaled.jpg');
     background-size: cover;
     height: 500px;
+    margin-bottom: 6rem;
     .container{
         .banner {
             display: flex;

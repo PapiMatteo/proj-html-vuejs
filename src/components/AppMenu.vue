@@ -70,7 +70,7 @@ export default {
     margin-top: 9rem;
     margin-bottom: 3rem;
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 

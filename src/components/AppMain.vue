@@ -2,13 +2,15 @@
 import AppMenu from './AppMenu.vue';
 import AppPopular from './AppPopular.vue';
 import AppBanner from './AppBanner.vue';
+import AppNews from './AppNews.vue';
 
 export default {
     components: {
-        AppPopular,
-        AppMenu,
-        AppBanner
-    },
+    AppPopular,
+    AppMenu,
+    AppBanner,
+    AppNews
+},
     data() {
         return {
             allergensList: [
@@ -62,7 +64,7 @@ export default {
         </ul>
     </div>
     <AppBanner />
-    
+    <AppNews />
 </template>
 
 <style lang="scss" scoped>
