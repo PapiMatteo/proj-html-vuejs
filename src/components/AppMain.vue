@@ -1,11 +1,13 @@
 <script>
 import AppMenu from './AppMenu.vue';
 import AppPopular from './AppPopular.vue';
+import AppBanner from './AppBanner.vue';
 
 export default {
     components: {
         AppPopular,
-        AppMenu 
+        AppMenu,
+        AppBanner
     },
     data() {
         return {
@@ -59,6 +61,7 @@ export default {
             </li>
         </ul>
     </div>
+    <AppBanner />
     
 </template>
 
@@ -98,6 +101,7 @@ ul {
             font-size: 1.5rem;
         }
     }
+    margin-bottom: 5rem;
 }
 
 .sale-bg {
@@ -111,5 +115,6 @@ ul {
         height: 150px;
     }
 }
+
 
 </style>
