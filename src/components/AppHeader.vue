@@ -25,7 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@use "../style/partials/variables" as *;
 
 .header-content {
     padding-top: 1.5rem;
@@ -41,14 +41,14 @@ export default {
 
         li {
             font-weight: 600;
-            color: white;
+            color: $primaryText;
             a {
                 text-decoration: none;
                 color: inherit;
             }
 
             &:hover {
-                color: #fdc731;
+                color: $evidencedText;
             }
         }
     }

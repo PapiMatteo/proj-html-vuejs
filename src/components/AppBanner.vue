@@ -20,6 +20,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 .mobile-app {
     background-image: url('../assets/img/app-ordering-scaled.jpg');
     background-size: cover;
@@ -32,11 +34,11 @@ export default {
             height: 500px;
             justify-content: center;
             h2 {
-                color: white;
+                color: $primaryText;
                 font-size: 2.5rem;
             }
             h1 {
-                color: #fdc731;
+                color: $evidencedText;
                 font-size: 4rem;
                 margin-bottom: 2.5rem;
             }

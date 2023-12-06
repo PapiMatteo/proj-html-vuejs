@@ -24,9 +24,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 .card{
     position: relative;
-    background-color: black;
+    background-color: $baseImgBg;
     img {
         display: block;
         opacity: 60%;
@@ -38,7 +40,7 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: $primaryText;
     }
 }
 </style>

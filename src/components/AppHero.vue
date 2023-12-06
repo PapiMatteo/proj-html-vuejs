@@ -21,6 +21,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
 
 .hero-content {
     height: 600px;
@@ -28,10 +29,10 @@ export default {
     align-items: center;
 }
 .text-content {
-    color: white;
+    color: $primaryText;
     letter-spacing: -3px;
     h1 {
-        color: #fdc731;
+        color: $evidencedText;
         font-size: 4rem;
         
     }

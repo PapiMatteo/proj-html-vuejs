@@ -24,6 +24,7 @@ export default {
 </template>
     
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
 
 .container {
     width: 40%;
@@ -40,12 +41,12 @@ export default {
     .newsletter-text {
         text-align: center;
         h1 {
-            color: #fdc731;
+            color: $evidencedText;
             font-size: 2.5rem;
             margin-bottom: 15px;
         }
         p {
-            color: white;
+            color: $primaryText;
         }
     }
     

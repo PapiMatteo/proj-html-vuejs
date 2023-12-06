@@ -11,9 +11,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 p {
-    color: white;
-    background-color: #cc1a26;
+    color: $primaryText;
+    background-color: $primaryBtn;
     padding: 15px 0;
     border-radius: 20px;
     text-align: center;
@@ -25,11 +27,11 @@ p {
         display: inline-block;
         margin-right: 15px;
         text-decoration: none;
-        color: white;
+        color: $primaryText;
     }
     &:hover {
         & {
-            background-color: #bf1e23;
+            background-color: $btnHover;
         }
     }
 }

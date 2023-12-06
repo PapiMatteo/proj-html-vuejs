@@ -43,6 +43,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
 
 footer {
     background-image: url('../assets/img/footer-background-scaled.jpg');
@@ -61,7 +62,7 @@ footer {
     }
 
     .list{
-        color: white;
+        color: $primaryText;
         h4 {
             margin-bottom: 1.5rem;
             font-weight: 800;
@@ -77,12 +78,12 @@ footer {
                 font-weight: 600;
                 &:hover {
                     a {
-                        color: #fdc731;
+                        color: $evidencedText;
                     }
                 }
                 .download {
                     width: 80%;
-                    border: 2px solid white;
+                    border: 2px solid $primaryText;
                     border-radius: 10px;
                 }
                 .coupon {
@@ -93,7 +94,7 @@ footer {
                     padding-left: 15px;
                 }
                 .coupon-title {
-                    color: #fdc731;
+                    color: $evidencedText;
                     padding-left: 10px;
                 }
                 
@@ -101,7 +102,7 @@ footer {
                     padding-left: 38px;
                 }
                 .hour{
-                    color: #fdc731;
+                    color: $evidencedText;
                 }
             }
         }
@@ -111,13 +112,13 @@ footer {
         }
     }
     .copyright {
-        color: white;
+        color: $primaryText;
         text-align: center;
         padding-top: 20px;
         font-size: .6rem;
     }
     span {
-        color: #fdc731;
+        color: $evidencedText;
     }
 }
 

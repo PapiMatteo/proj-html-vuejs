@@ -23,10 +23,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
 
 ul {
     list-style-type: none;
-    color: white;
+    color: $primaryText;
     display: flex;
     justify-content: space-between;
     width: 100%;

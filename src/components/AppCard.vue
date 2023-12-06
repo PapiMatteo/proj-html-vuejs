@@ -44,6 +44,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 h3, .price, .alt-text {
     text-align: center;
 }
@@ -66,12 +68,12 @@ h3 {
             padding: 15px 20px;
             text-align: center;
             border-radius: 50%;
-            color: white;
+            color: $primaryText;
             margin-bottom: 20px;
         }
         a{
             text-decoration: none;
-            color: white;
+            color: $primaryText;
         }
     }
 
@@ -87,14 +89,14 @@ h3 {
 }
 
 .card-img {
-    background-color: black;
+    background-color: $baseImgBg;
     img {
         display: block;
     }
 }
 
 .price {
-    color:#cc1a26;
+    color: $primaryBtn;
 }
 
 .alt-text {
@@ -107,7 +109,7 @@ h3 {
     }
 
     .card-img {
-        background-color: black;
+        background-color: $baseImgBg;
         img {
         display: block;
         width: 100%;
