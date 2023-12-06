@@ -1,4 +1,6 @@
 <script>
+import AppNewsletter from './AppNewsletter.vue';
+
 export default {
     props: {
         navItem: Array
@@ -7,8 +9,8 @@ export default {
         getImagePath(img) {
             return new URL(`../assets/img/${img}`, import.meta.url).href;
         }
-    }
-
+    },
+    components: { AppNewsletter }
 }
 </script>
 
@@ -31,6 +33,8 @@ export default {
                 </ul>
             </div>
         </div>
+
+        <AppNewsletter />
         
     </footer>
 
@@ -50,7 +54,7 @@ footer {
         padding-top: 6rem;
         display: flex;
         justify-content: space-between;
-        height: 300px;
+        margin-bottom: 4rem;
     }
 
     .list{
