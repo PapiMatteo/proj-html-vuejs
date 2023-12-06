@@ -36,6 +36,8 @@ export default {
 
         <AppNewsletter />
         
+        <p class="copyright"><span>&copy; Copyright 2012 - 2020 | Avada Theme by </span> ThemeFusion <span>| All Rights Reserved | Powered by</span> WordPress</p>
+
     </footer>
 
 </template>
@@ -45,8 +47,9 @@ export default {
 footer {
     background-image: url('../assets/img/footer-background-scaled.jpg');
     background-size: cover;
-    background-position: bottom;
-    height: 1000px;
+    background-position: center;
+    min-height: 1000px;
+    
 
     .footer-container {
         width: 85%;
@@ -106,6 +109,15 @@ footer {
             text-decoration: none;
             color: inherit;
         }
+    }
+    .copyright {
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        font-size: .6rem;
+    }
+    span {
+        color: #fdc731;
     }
 }
 

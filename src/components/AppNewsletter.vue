@@ -1,8 +1,9 @@
 <script>
 import AppFooterBtn from './AppFooterBtn.vue';
+import AppSocials from './AppSocials.vue';
 
 export default {
-    components: { AppFooterBtn }
+    components: { AppFooterBtn, AppSocials }
 }
 </script>
 
@@ -17,6 +18,7 @@ export default {
             <input type="email" name="" id="" placeholder="you@email.com">
             <AppFooterBtn :btnText="'SUBSCRIBE'"/>
         </div>
+        <AppSocials />
         
     </div>
 </template>
