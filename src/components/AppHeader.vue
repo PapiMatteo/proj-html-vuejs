@@ -33,14 +33,24 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a {
-        text-decoration: none;
-        color: white;
-    }
+
     ul {
         list-style-type: none;
         display: flex;
         gap: 2rem;
+
+        li {
+            font-weight: 600;
+            color: white;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:hover {
+                color: #fdc731;
+            }
+        }
     }
 
 }
