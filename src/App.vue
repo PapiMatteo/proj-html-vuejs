@@ -1,4 +1,5 @@
 <script>
+import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppHero from './components/AppHero.vue';
 import AppMain from './components/AppMain.vue';
@@ -7,8 +8,9 @@ export default {
   components: {
     AppHeader,
     AppHero,
-    AppMain
-  },
+    AppMain,
+    AppFooter
+},
   data() {
     return {
       headerNav: [
@@ -95,7 +97,12 @@ export default {
         },
         {
           title:'VOUCHER',
-          imgPath: 'footer-coupon-200x200.png'
+          imgList:[
+            {
+              imgPath: 'footer-coupon-200x200.png'
+            }
+          ]
+          
         }
       ]
     }
@@ -109,6 +116,7 @@ export default {
     <AppHero />
   </div>
   <AppMain />
+  <AppFooter :navItem="footerNav"/>
   
 </template>
 
