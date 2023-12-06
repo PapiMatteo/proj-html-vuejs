@@ -17,6 +17,86 @@ export default {
         'About',
         'News',
         'Contact Us'
+      ],
+      footerNav: [
+        {
+          title:'ORDER ONLINE',
+          navigation: [
+            'Appetizer',
+            'Burgers',
+            'Pizza',
+            'Fries',
+            'Sides',
+            'Desserts',
+            'Beverage',
+            'Specials'
+          ]
+        },
+        {
+          title:'NAVIGATE',
+          navigation: [
+            'Home',
+            'Alternate Home',
+            'Menu',
+            'About',
+            'News',
+            'Contact Us',
+            'Cart'
+          ]
+        },
+        {
+          title:'INFORMATION',
+          navigation: [
+            'My Account',
+            'Term Of Service',
+            'Privacy Policy'
+          ],
+          imgList: [
+            {
+              imgPath: 'app-store-badge-200x67.png'
+            },
+            {
+              imgPath: 'play-store-badge-200x67.png'
+            }
+          ]
+        },
+        {
+          title:'OPENING HOURS',
+          navigation: [
+            {
+              day: 'Mon -',
+              hour: ' 10AM to 11PM'
+            },
+            {
+              day: 'Tue -',
+              hour: ' 10AM to 11PM'
+            },
+            {
+              day: 'Wed -',
+              hour: ' 10AM to 11PM'
+            },
+            {
+              day: 'Thur -',
+              hour: ' 10AM to 11PM'
+            },
+            {
+              day: 'Fri -',
+              hour: ' 10AM to 11PM'
+            },
+            {
+              day: 'Sat -',
+              hour: ' 10AM to 1AM'
+            },
+            {
+              day: 'Sun -',
+              hour: ' 11AM to 10PM'
+            }
+          ]
+        },
+        {
+          title:'VOUCHER',
+          imgPath: 'footer-coupon-200x200.png'
+        }
       ]
     }
   }
